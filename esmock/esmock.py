@@ -1,4 +1,5 @@
 import random
+import time
 
 import flask
 from flask import Flask, request
@@ -68,7 +69,7 @@ def search(index):
 
     if size:
         return data(size, request.get_json())
-
+    time.sleep(random.randint(40, 1500) / 1000)
     return aggs(request.get_json())
 
 
