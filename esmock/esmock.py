@@ -1,11 +1,10 @@
-import flask
 import random
 
+import flask
 from flask import Flask, request
 from flask.ext.cors import CORS
 
 from mocks import gen_aggregations, gen_data
-
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -90,5 +89,9 @@ def index():
     })
 
 
-if __name__ == '__main__':
+def main():
     app.run(port=9200, debug=True)
+
+
+if __name__ == '__main__':
+    main()

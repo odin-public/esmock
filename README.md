@@ -3,4 +3,7 @@ esmock
 
 Simplest ElasticSearch mock server ever.
 
-To start, edit `mocks.py` as needed, then run the `esmock.py` script.
+How to run
+-------
+0. `python setup.py install`
+0. `run-esmock-server`
